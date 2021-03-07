@@ -19,7 +19,7 @@ After authenticating as user in the rumpus web application a user is able to cre
 
 The following screenshot shows the execution of JavaScript using the folder name:
 
-![xss image](rumpus-xss.png)
+![xss image](https://raw.githubusercontent.com/tvrbk/tvrbk.github.io/main/_posts/xss.png)
 
 The following POST request shows the payload on the last line:
  
@@ -61,7 +61,7 @@ The XSS occurs because the folder name is not sufficiently encoded. With double 
 # Web User Account Management
 The following setting introduces the two other vulnerabilities. The applications network settings contain a remote admin setting called web user account management. This enables the vulnerable functionality of managing user accounts.
 
-![user management image](rumpus-user-management.png)
+![user management image](https://raw.githubusercontent.com/tvrbk/tvrbk.github.io/main/_posts/user-management.png)
 
 # Cross-Site Request Forgery (CVE-2020-27574)
 A Cross-Site Request Forgery (CSRF) vulnerability is a weakness in a web application where it allows request from other origins. Malicious users are able to post data from other sources to the web applications endpoints. Numerous ways exist for HTML pages to automatically sent data to a form. This can be done with JavaScript or something as simple as an image.
@@ -271,7 +271,7 @@ X-XSS-Protection: 1; mode=block
 
 On a mouseover the command injection will be send to the server. When done by an administrator this will result in a root shell for the attacker.
 
-![xss to root image](rumpus-xss-to-root.png)
+![xss to root image](https://raw.githubusercontent.com/tvrbk/tvrbk.github.io/main/_posts/xss-to-root.png)
 
 # CSRF to root
 Another combination is to trick a user with access to user management to visit the following malicious page. Because a user account is needed to set the folder value to, a user is created beforehand named “rce”. No authentication is needed to perform this attack.
