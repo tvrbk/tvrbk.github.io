@@ -4,7 +4,7 @@ title:  "Rumpus 8.2.14"
 date:   2021-03-07 14:35:22 +0100
 categories: CVE
 ---
-This is a description of vulnerabilities found in Rumpus version 8.2.14, which enable a malicious actor to get root access to the underlying system if the web user account management setting is enabled. 
+This is a description of vulnerabilities found in Rumpus version 8.2.14, which enable a malicious actor to get root access to the underlying system if the web user account management setting is enabled. No patch is available, disabling the remote user management will mitigate the most risk.
 
 Rumpus is a file transfer application developed by Maxum. Available for Windows and Mac of which only the Mac version was examined.
 
@@ -303,4 +303,4 @@ Resulting in a root shell for the attacker.
 
 # Advisory
 
-Disabling the remote user management will mitigate the most risk.
+No patch is available, disabling the remote user management will mitigate the most risk.
