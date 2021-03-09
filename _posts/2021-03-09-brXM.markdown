@@ -108,7 +108,7 @@ As can be seen in the screenshot below, an administrator which visits the page w
 
 ![csrf image](https://raw.githubusercontent.com/tvrbk/tvrbk.github.io/main/_posts/brXM-14.png)
 
-Remote Code Execution
+# Remote Code Execution
 The web application contains functionality with which the default administrator user is able to run scripts using the updater editor. This functionality is restricted, for example Java system commands are unavailable. It is possible to use the same bypass as was found in Jenkins last year, using a Groovy transformation, to execute system commands. More information about this bypass can be found at the following great blogpost by Orange Tsai.
 
 “@ASTTest is a special Abstract Syntax Tree (AST) transformation meant to help debugging other AST transformations or the Groovy compiler itself. It will let the developer “explore” the AST during compilation and perform assertions on the AST rather than on the result of compilation. This means that this AST transformations gives access to the AST before the Bytecode is produced.”
